@@ -4,7 +4,8 @@
     font-style: normal;
     text-align: center;
 }
-h1 {
+.title {
+    font-size: 35px;
     font-weight: 700;
     color: #75A9E7;
     -webkit-text-stroke-width: 0.5px;
@@ -12,7 +13,8 @@ h1 {
 }
 
 #taskName {
-    width: 150px;
+    font-size: medium;
+    width: 250px;
     border: 0.5px solid #000;
     padding: 5px 5px;
     border-radius: 5px;
@@ -21,12 +23,53 @@ h1 {
 
 #addButton {
     border: 0.5px solid #000;
-    padding: 2.5px 20px;
+    padding: 5px 25px;
     border-radius: 5px;
     background-color: #75A9E7;
 }
 
+#addButton:hover {
+    background-color: #50729d;
+}
+
 #tasks {
     list-style: none;
-    margin-left: -250px;
+    font-size: x-large;
+    padding: 10px;
 }
+
+ul li:hover {
+    background-color: #bbb;
+}
+
+
+ul li.checked {
+    background: #888;
+    color: #000;
+  }
+
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #000;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+.close {
+    padding: 0px 10px;
+    float: inline-end;
+    color: red;
+    font-weight: 700;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #000;
+
+}
+
+.close:hover {
+    background-color: #bbbbbb;
+  }
