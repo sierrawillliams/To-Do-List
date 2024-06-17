@@ -9,10 +9,15 @@
         <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <h1>To Do List</h1>
-        <form>
-            <input id="taskName" type="text" onclick="" placeholder="Enter Task...">
-            <input id="addButton" type="button" value="Add">
-        </form>
+        <div>
+            <h1>To Do List</h1>
+            <form>
+                <input id="taskName" type="text" placeholder="Enter Task...">
+                <span id="addButton" onclick="newElement()">Add</span>
+            </form>
+            <hr/>
+        </div>
+        <ul id="tasks">
+        </ul>
     </body>
 </html>
