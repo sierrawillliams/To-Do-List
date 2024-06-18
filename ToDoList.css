@@ -34,8 +34,12 @@
 
 #tasks {
     list-style: none;
-    font-size: x-large;
-    padding: 10px;
+    font-size: 25px;
+    margin-left: -35px;
+}
+
+ul li {
+    padding: 15px 0px 0px 0px;
 }
 
 ul li:hover {
@@ -43,7 +47,8 @@ ul li:hover {
 }
 
 .close {
-    padding: 0px 10px;
+    font-size: 35px;
+    margin: -5px 13px 0px 0px;
     float: inline-end;
     color: red;
     font-weight: 700;
@@ -54,4 +59,10 @@ ul li:hover {
 
 .close:hover {
     background-color: #bbbbbb;
+  }
+
+  .taskCheckbox {
+    float: left;
+    margin: 10px 0px 0px 13px;
+    transform: scale(1.5);
   }
